@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+const PORT = process.env.PORT || 3000
+
 app.get('/', ( req, res, next) => {
     
     res
@@ -11,6 +13,6 @@ app.get('/', ( req, res, next) => {
     .end();
 })
 
-app.listen(80, () => {
-    console.log(`APP RUNNING ON PORT ${ 80 }`)
+app.listen( PORT , () => {
+    console.log(`APP RUNNING ON PORT ${ PORT }`)
 })
