@@ -18,7 +18,7 @@
 on:
   push:
     branches:
-      -master
+      - master
 
 env:
   AZURE_WEBAPP_NAME: azure-CI-deployment-demo    # set this to your application's name
